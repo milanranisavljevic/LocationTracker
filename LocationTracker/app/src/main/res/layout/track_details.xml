@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Track 1"
+        android:gravity="center"
+        android:layout_weight="0.5"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description for My Track 1"
+        android:gravity="center"
+        android:layout_weight="0.3"/>
+    <Button
+        android:id="@+id/btnAddLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Location"
+        android:layout_weight="0.2"
+        style="@style/BottomButton"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You have no location samples recorded. Click on add location button to start recording samples"
+        android:gravity="center"
+        android:layout_weight="9"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:layout_weight="2"
+            style="@style/BottomButton"/>
+    </LinearLayout>
+
+
+</LinearLayout>
